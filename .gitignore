@@ -1,0 +1,11 @@
+/target
+build
+.env
+.vscode
+.vs
+.DS_Store
+.clangd
+releases
+SoulsyHUD_v*
+/vcpkg_installed
+**/unused
