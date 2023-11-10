@@ -2,11 +2,10 @@ set windows-shell := ["pwsh.exe", "-Command"]
 set shell := ["bash", "-uc"]
 set dotenv-load := false
 
-SPRIGGIT := "~/bin/spriggit"
 TESTMOD := "/mnt/g/Vortex Mods/skyrimse/GuardsTalk/"
 
 # List available recipes.
-help:
+@help:
     just -l
 
 # Install current build to the test mod.
@@ -15,6 +14,10 @@ install:
     echo "copying to live mod for testing..."
     outdir="{{TESTMOD}}"
     cp -rp GuardsTalk_KID.ini "$outdir"
+
+# Render nexus docs to bbcode & put them in the clipboard.
+docs:
+	md2nexus nexusdocs.md | pbcopy
 
 # Build a mod archive for Nexus.
 archive:
