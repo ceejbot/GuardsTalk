@@ -17,7 +17,7 @@ install:
 
 # Render nexus docs to bbcode & put them in the clipboard.
 docs:
-	md2nexus nexusdocs.md | pbcopy
+	md2nexus < nexus_docs.md | pbcopy
 
 # Build a mod archive for Nexus.
 archive:
