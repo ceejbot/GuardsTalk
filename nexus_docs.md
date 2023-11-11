@@ -16,19 +16,19 @@ A [Keyword Item Distributor](https://www.nexusmods.com/skyrimspecialedition/mods
 
 Why? Because GDO is fun, and it's more fun when guards also react to the weapon you took all that trouble to do the quest for / craft / find in an out-of-the-way spot.
 
-## Coverage
+## How keywords are assigned
 
-Many armor mods don't need specific coverage if they use the standard game keywords to tag both the armor slot and the material used. KID can target these items as a category. For instance, any mod-added Dwemer shield can be tagged for the fancy Dwarven shield reaction. The same is true for many mod-added weapons: weapon category plus material allow us to tag with the appropriate SPIKE keyword.
+Nearly all armor mods don't need specific coverage if they use the standard game keywords to tag both the armor slot and the material used. KID can target these items as a category. For instance, any mod-added Dwemer shield can be tagged for the fancy Dwarven shield reaction, so long as it has the keyword `ArmorMaterialDwarven`. The same is true for nearly all mod-added weapons: weapon category plus material allow us to tag with the appropriate SPIKE keyword.
 
 Some items from mods deserve hand-selected reactions, however. An example is the *Necrotic Blade* from [Desecration](https://www.nexusmods.com/skyrimspecialedition/mods/90832), which is given the "foul" tag. Keywords are distributed to editor ids for items like this where possible, so distribution succeeds with items in collections with different form ids, and items in compacted and ESL-ified plugin files.
 
-If something doesn't fit into the categories covered by the GDO keywords, no keywords are added to it.
+If something doesn't fit into the categories covered by the GDO keywords, this mod adds no keywords to it.
 
 KID distribution files are safe to install even if you don't have the items referenced. KID will skip over items it can't match at runtime, though it might mention the skip in its logs.
 
 ## Credits
 
-What would this modding scene even be without PowerOf3?
+What would this modding scene even be without [powerofthree](https://www.nexusmods.com/skyrimspecialedition/users/2148728)?
 
 ## LICENSE
 
